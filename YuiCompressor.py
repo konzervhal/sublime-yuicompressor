@@ -20,7 +20,7 @@ class YuiCompressorCommand(sublime_plugin.TextCommand):
 
         package_path = join(sublime.packages_path(), "YuiCompressor")
 
-        yui_path = package_path+"\\YuiConsole.exe"
+        yui_path = package_path+"\\bin\\YuiConsole.exe"
         sys.stdout.write(yui_path + '\n')
 
 
