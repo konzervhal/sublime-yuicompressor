@@ -18,10 +18,10 @@ class YuiCompressorCommand(sublime_plugin.TextCommand):
         efile = view.file_name()
         ftype = os.path.splitext(efile)[-1][1:] # csak a kiterjesztes, ezt adom at a yui compresszornak
 
-        package_path = join(sublime.packages_path(), "Yui")
+        package_path = join(sublime.packages_path(), "YuiCompressor")
 
-        yui_path = package_path+"/YuiConsole.exe"
-        # sys.stdout.write(yui_path + '\n')
+        yui_path = package_path+"\\YuiConsole.exe"
+        sys.stdout.write(yui_path + '\n')
 
 
         if (not(os.path.isfile(yui_path) and os.access(yui_path, os.R_OK))):
